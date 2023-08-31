@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      const weekdays = ["mon", "tues", "wed", "thur", "fri", "sat", "sun"];
+      const openingHours = {
+        [weekdays[3]]: {
+          open: 12,
+          close: 12,
+        },
+        [weekdays[4]]: {
+          open: 10,
+          close: 10,
+        },
+        [weekdays[5]]: {
+          open: 0,
+          close: 0,
+        },
+      };
+      const resturant = {
+        name: "Burger point",
+        location: ["Gujranwala", "College Road", "Gulshan Colony"],
+        categories: ["vegetrian", "Organic", "Itallian", "Pizzeria"],
+        starterMenu: ["Garlic bread", "Biscuits", "Salad", "snacks", "Water"],
+        mainMenu: ["Pizza", "Pasta", "Burger"],
+      };
+      console.log(openingHours);
+    </script>
+  </body>
+</html>
